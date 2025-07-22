@@ -6,7 +6,7 @@ export const API_OPTIONS= {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NzJhODc4YjNlNjBlMGE3ZTdmMjE2MGVmNzg4NjE0NCIsIm5iZiI6MTc1Mjk2MzE2Ni41NzMsInN1YiI6IjY4N2MxODVlYmY5OTAzYTQ4YmY3NjNhNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jYqG5RRMF_PqWZ_5iAXVmb2B1xGoF-aYBY5uLc-RYjU'
+    Authorization: 'Bearer '+  process.env.REACT_APP_TMDB_KEY
   }
 };
 
@@ -14,4 +14,4 @@ export const IMG_CDN_URL="https://image.tmdb.org/t/p/w500/";
 
 export const bg_url='https://assets.nflxext.com/ffe/siteui/vlv3/a927b1ee-784d-494a-aa80-cf7a062d2523/web/DE-en-20250714-TRIFECTA-perspective_69e92d2e-c640-442c-8138-347e74824541_large.jpg'
 
-export const API_KEY="";
+export const API_KEY=process.env.REACT_APP_API_KEY;
