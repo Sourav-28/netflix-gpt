@@ -57,7 +57,8 @@ const Header = () => {
 
     {user && 
         (<div className='flex p-2'>
-          <button className='py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg' onClick={handleGptSearchClick}>{!showGptSearch ? "GPT Search" : "Homepage"}</button>
+          {/* <button className='py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg' onClick={handleGptSearchClick}>{!showGptSearch ? "GPT Search" : "Homepage"}</button> */}
+          <button className='bg-red-700 hover:bg-red-600 px-4 py-2 mx-4 my-2 text-white rounded-lg font-semibold shadow-md transition-all' onClick={handleGptSearchClick}>{!showGptSearch ? "GPT Search" : "Homepage"}</button>
           <img className='w-12 h-12' alt='usericon'
             src={userIcon}/>
             <button onClick={handleSignOut} className='font-bold text-white'>Sign out</button>

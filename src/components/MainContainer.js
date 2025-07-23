@@ -9,11 +9,11 @@ const MainContainer = () => {
   if(!movies)return null;
 
   const mainMovie=movies[0]; 
-  console.log(mainMovie);
+  // console.log(mainMovie);
 
   const {original_title,overview}=mainMovie;
   return (
-    <div>
+    <div className='relative w-screen aspect-video'>
         <VideoTitle title={original_title} overview={overview}/>
         <VideoBackground movieId={mainMovie.id}/>
     </div>

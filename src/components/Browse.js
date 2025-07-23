@@ -18,7 +18,7 @@ const Browse = () => {
 
   const showGptSearch=useSelector((store)=>store.gpt.showGptSearchView);
   return (
-    <div>
+    <div className='overflow-x-hidden overflow-y-auto [&::-webkit-scrollbar]:hidden scrollbar-width-none' >
       
       <Header/>
       {showGptSearch ? (<GptSearch/>) : (
